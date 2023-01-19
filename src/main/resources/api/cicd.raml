@@ -1,0 +1,21 @@
+#%RAML 1.0
+title: cicd
+description: This is a demo for the cicd
+
+/cicd:
+  get:
+    queryParameters:
+      id: number
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            properties:
+              Message: string
+              status: number
+            example:
+              Message: "Success"
+              status: 200
+
+  
